@@ -1,7 +1,3 @@
-Here's a sample `README.md` file for your project:
-
----
-
 # 🎉 Countdown Banner Application
 
 Welcome to the **Countdown Banner Application**! 🚀 This project is a full-stack web application that allows you to create and manage banners with countdown timers. The banners automatically disappear when the countdown reaches zero, and you can toggle their visibility as needed.
