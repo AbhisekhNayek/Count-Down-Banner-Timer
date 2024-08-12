@@ -1,0 +1,164 @@
+/* index.css */
+
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Updated font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5;
+  color: #333;
+  text-align: center;
+}
+
+code {
+  font-family: 'Courier New', monospace; /* Maintains monospace font for code */
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.margin-zero {
+  margin: 0;
+}
+
+.padding-zero {
+  padding: 0;
+}
+
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Different font for headers */
+}
+
+/* Banner Container */
+.banner-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Banner Styles */
+.banner {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.banner:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.banner-content a:hover {
+  color: #ffcccb;
+}
+
+/* Dashboard Styles */
+.dashboard {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard div {
+  margin-bottom: 15px;
+}
+
+.dashboard label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.dashboard input[type="text"],
+.dashboard input[type="number"],
+.dashboard input[type="email"],
+.dashboard textarea {
+  border-radius: 8px;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard input[type="text"]:focus,
+.dashboard input[type="number"]:focus,
+.dashboard input[type="email"]:focus,
+.dashboard textarea:focus {
+  border-color: #ff6b6b;
+  box-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
+  outline: none;
+}
+
+.dashboard button {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.dashboard button:hover {
+  background-color: #ff4757;
+  transform: scale(1.05);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #4a90e2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}

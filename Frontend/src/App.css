@@ -1,0 +1,130 @@
+/* General Styles */
+body,
+html,
+#root,
+.App {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  text-align: center;
+}
+
+/* Banner Container */
+.banner-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 20px;
+  gap: 15px;
+  justify-content: center; /* Center align items */
+}
+
+/* Banner Styles */
+.banner {
+  background-color: #3498db; /* Updated color */
+  color: #fff;
+  padding: 15px;
+  width: calc(33.33% - 30px); /* Adjust spacing */
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 1rem; /* Softer corners */
+  cursor: pointer;
+}
+
+.banner:hover {
+  transform: scale(1.02); /* Subtle scale effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content a {
+  color: #f1c40f; /* Updated link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease;
+}
+
+.banner-content a:hover {
+  color: #e67e22; /* Hover color */
+}
+
+/* Dashboard Styles */
+.dashboard {
+  padding: 25px;
+  background-color: #fff; /* Dashboard background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard div {
+  margin-bottom: 15px;
+}
+
+.dashboard label {
+  margin-right: 15px;
+  font-weight: bold;
+  color: #2c3e50; /* Darker text for contrast */
+}
+
+/* Input Field Styles */
+.dashboard input[type="text"],
+.dashboard input[type="number"],
+.dashboard textarea {
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard input[type="text"]:focus,
+.dashboard input[type="number"]:focus,
+.dashboard textarea:focus {
+  border-color: #3498db; /* Focus color */
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+  outline: none;
+}
+
+/* Button Styles */
+.dashboard button {
+  background-color: #3498db; /* Primary button color */
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.dashboard button:hover {
+  background-color: #2980b9; /* Darker on hover */
+  transform: scale(1.03); /* Slightly larger */
+}
+
+button {
+  background-color: #8e4141;
+  border-radius: 1rem;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  align-items: center;
+  color: black;
+  font-weight: 800;
+}
+
+button:hover {
+  background-color: #ff4757;
+  transform: scale(1.05);
+}
